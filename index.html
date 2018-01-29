@@ -48,33 +48,30 @@
                </div> 
         </div>
         <p>Watch the following video for a walkthrough of the app to see all the features in action!</p>
-        <button>Git Hub</button>
-        <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5DAdvmZHA74?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="featured-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5DAdvmZHA74?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
+        <button>Git Hub</button>
     </div>
     <div class="projects">
         <h2>Projects</h2>
-        <div class="projects-mobile">
-            <div class="project">
-                <img src="img/Catlendly.png" alt="Catlendly" width="350px" height="232px">
-            </div>
-            <div class="project">
+        <div class="ui selection dropdown" style="width: 100%" data-project-dropdown>
+                <input type="hidden" name="project">
+                <i class="dropdown icon"></i>
+                <div class="default text">Select a project</div>
+                <div class="menu" data-menu>
+                  <div class="item" data-value="2" style="text-align:center;">Catlendly</div>
+                  <div class="item" data-value="1" style="text-align:center;">Zendesk-Dashboard</div>
+                  <div class="item" data-value="0" style="text-align:center;">DigitalTasks</div>
+                </div>
+              </div>
 
-            </div>
-            <div class="project">
-
-            </div>
-
-        </div>
+        
        
-
     </div>
     <div class="contact">
-
     </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
 <script src="main.js"></script>
 </html>

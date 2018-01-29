@@ -111,6 +111,12 @@ a {
 
 }
 
+.featured-video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .chrome-button {
     display: flex;
     align-items: center;
@@ -133,6 +139,16 @@ a {
     font-family: 'Open Sans',arial,sans-serif;
 }
 
+.projects {
+    padding: 5px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.project {
+    border: 4px solid #f1f2f3;
+    margin: 10px;
+}
+
 
 @media screen and (max-width: 540px) {
     .nav-desktop {
@@ -151,4 +167,10 @@ a {
         position: relative;
         bottom: 135px;
     }
+
+    .project img {
+        display: block;
+        width: 100%;
+    }
+
 }
