@@ -148,6 +148,27 @@ a {
     margin: 10px;
 }
 
+.contact h2{
+    text-align: center;
+    font-family: 'Open Sans',arial,sans-serif;
+    padding-top: 35px;
+}
+
+.contact {
+    background-color: #eff8ff;
+}
+
+.contact-buttons {
+    margin: 0 auto;
+}
+
+.contact-buttons a{
+    font-size: 50px;
+    color: #9bd9f2;
+    display: inline-block;
+    padding: 5px;
+}
+
 
 @media screen and (max-width: 540px) {
     .nav-desktop {
@@ -162,7 +183,7 @@ a {
         bottom: 135px;
         /* justify-content: center; */
     }
-    .featured, .projects {
+    .featured, .projects, .contact {
         position: relative;
         bottom: 135px;
     }
@@ -173,6 +194,17 @@ a {
 
     .hide {
         display: none;
+    }
+
+    .contact {
+        margin-top: 122px;
+    }
+
+    .contact-buttons {
+        text-align: center;
+        padding: 15px 20px;
+        width: 320px;
+        height: 160px;
     }
 
 }
