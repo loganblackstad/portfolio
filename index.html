@@ -55,16 +55,22 @@
     </div>
     <div class="projects">
         <h2>Projects</h2>
-        <div class="ui selection dropdown" style="width: 100%" data-project-dropdown>
-                <input type="hidden" name="project">
-                <i class="dropdown icon"></i>
+        <div class="ui selection dropdown" style="width: 100%">
+                <input type="hidden" name="gender">
+                <i class="dropdown icon" data-project-dropdown></i>
                 <div class="default text">Select a project</div>
                 <div class="menu" data-menu>
-                  <div class="item" data-value="2" style="text-align:center;">Catlendly</div>
-                  <div class="item" data-value="1" style="text-align:center;">Zendesk-Dashboard</div>
-                  <div class="item" data-value="0" style="text-align:center;">DigitalTasks</div>
+                  <div class="item" data-value="2" style="text-align: center" data-item>Catlendly</div>
+                  <div class="item" data-value="1" style="text-align: center" data-item>Zendesk-Dashboard</div>
+                  <div class="item" data-value="0" style="text-align: center" data-item>DigitalTasks</div>
                 </div>
               </div>
+              <div class="project hide" data-project>
+                    <h2 data-project-title></h2>
+                    <p data-project-description></p>
+                    <button>Git Hub</button>
+                </div>
+        
 
         
        
@@ -73,5 +79,6 @@
     </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
 <script src="main.js"></script>
 </html>

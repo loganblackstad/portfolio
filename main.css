@@ -1,7 +1,6 @@
 /* Import font families */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans');
 
-
 html, body {
     box-sizing: border-box;
     margin: 0;
@@ -70,12 +69,12 @@ a {
     padding: 20px;
 }
 
-.about h2, .featured h2, .projects h2 {
+.about h2, .featured h2, .projects h2, .project h2 {
     text-align: center;
     font-family: 'Fira Sans', sans-serif;
 }
 
-.about p, .featured p {
+.about p, .featured p, .project p {
     font-family: 'Open Sans', sans-serif;
     padding: 18px;
     letter-spacing: 0.03em;
@@ -89,7 +88,7 @@ a {
     border: 15px solid white;
 }
 
-.featured {
+.featured, .project {
     background-color: #eff8ff;
     padding: 20px;
 }
@@ -99,7 +98,7 @@ a {
     margin: 0 auto;
 }
 
-.featured button {
+.featured button, .project button {
     background-color: #a5d8f0;
     color: white;
     border: none;
@@ -168,9 +167,12 @@ a {
         bottom: 135px;
     }
 
-    .project img {
-        display: block;
-        width: 100%;
+    .item {
+        font-family: 'Fira Sans', sans-serif;
+    }
+
+    .hide {
+        display: none;
     }
 
 }
