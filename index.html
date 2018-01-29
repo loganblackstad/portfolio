@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/dropdown.css">
     <link rel="stylesheet" href="main.css">
     <title>Tyler Campbell Portfolio</title>
 </head>
@@ -14,7 +15,7 @@
             <div class="logo">
                    <a href="#header">Tyler Campbell</a>
             </div>
-			<div class="menu">
+			<div class="nav-desktop">
 				<a href="#contact" class="contact_button">Contact</a>
 				<a href="#portfolio" class="portfolio_button">Portfolio</a>
 				<a href="#about" class="about_button">About Me</a>
@@ -28,8 +29,8 @@
         <div class="about">
         <img src="img/tyler.png" id="about" height="250px" width="255px">
         <h2>Hi, I'm Tyler</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quibusdam earum velit dicta, dolor nihil, odio explicabo enim officia, quis quisquam. Voluptates enim delectus quas hic molestias nemo autem deleniti?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, laudantium? Doloribus laboriosam, quas reprehenderit nobis nemo earum omnis quo modi iusto a commodi natus laborum minus accusantium iste nisi eveniet?</p>
+        <p>I'm a former tech support specialist and certified Salesforce admin turned Full Stack Web Developer. While working as a Salesforce Admin I became fanatical about problem solving and finding more efficient ways to do things. I taught myself Salesforce's coding language, Apex, so that I would have infinite possibilities in the things I created. While learning Apex, I realized I loved programming and  wanted to continue expanding my knowledge into Full Stack Web Development. I am currently a student in DigitalCraft's four month, full-time immersive coding bootcamp.
+            </p>
     </div>
     <div class="featured">
             <span class="fa-stack fa-lg">
@@ -37,16 +38,41 @@
                     <i class="fa fa-video-camera fa-stack-1x" aria-hidden="true" style="color: #eff8ff;"></i>
                   </span>
                   <h2>Featured Project: DigitalTasks</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime voluptas iure assumenda, optio, itaque cum temporibus in architecto voluptates corporis quas ut molestiae, atque dicta debitis minus autem tempora dolorem?</p>
-        <button>GIT HUB</button>
+        <p>DigitalTasks is a task management chrome extension that aggregates both personal and business tasks (via our Salesforce integration). The app allows users to create, update, and delete tasks and contacts from any http / https website. Using the app's filter feature, users can quickly view overdue, completed, and upcoming tasks sorted by date. Additionally, DigitalTasks directly integrates with Salesforce, allowing users to easily view, update, and delete tasks with logging into their Salesforce instance. DigitalTasks is currently published on chrome's marketplace, and can be installed by following the link below.</p>
+        <div role="button" class="chrome-button">
+            <div style="padding-right: 8px;">
+                <i class="fa fa-plus" aria-hidden="true"></i> 
+            </div>
+               <div>
+                    Add to Chrome
+               </div> 
+        </div>
+        <p>Watch the following video for a walkthrough of the app to see all the features in action!</p>
+        <button>Git Hub</button>
         <video src=""></video>
     </div>
     <div class="projects">
         <h2>Projects</h2>
+        <div class="projects-mobile">
+            <div class="project">
+                <img src="img/Catlendly.png" alt="Catlendly" width="350px" height="232px">
+            </div>
+            <div class="project">
+
+            </div>
+            <div class="project">
+
+            </div>
+
+        </div>
+       
 
     </div>
     <div class="contact">
 
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+<script src="main.js"></script>
 </html>

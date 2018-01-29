@@ -75,8 +75,12 @@ a {
     font-family: 'Fira Sans', sans-serif;
 }
 
-.about p {
+.about p, .featured p {
     font-family: 'Open Sans', sans-serif;
+    padding: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.7em;
+    text-align: center;
 }
 
 #about {
@@ -103,12 +107,35 @@ a {
     margin: 0 auto;
     width: 35%;
     min-height: 50px;
+    text-transform: uppercase;
 
+}
+
+.chrome-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom,#5689db,#4d7bd6);
+    background-color: #4d7bd6;
+    color: white;
+    border-radius: 2px;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 0 0 rgba(255,255,255,.06) inset, 0 2px 3px 0 rgba(0,0,0,.2);
+    font-size: 11px;
+    text-transform: uppercase;
+    border: 1px solid #2d53af;
+    font-weight: bold;
+    cursor: pointer;
+    outline: 0;
+    height: 30px;
+    width: 157px;
+    font-family: 'Open Sans',arial,sans-serif;
 }
 
 
 @media screen and (max-width: 540px) {
-    .menu {
+    .nav-desktop {
         display: none;
     }
     #about {
