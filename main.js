@@ -17,4 +17,12 @@ $('a[href*="#"]')
           scrollTop: $(targetHash).offset().top
         }, 1500);
   });
+//Button anchor links
+$(document).ready(() => {
+  $('button').on('click', (event) => {
+    event.preventDefault();
+    let targetURL = event.target.getAttribute('data-href');
+    window.open(targetURL);
+  });
+});
 
