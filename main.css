@@ -48,10 +48,10 @@ html, body {
 .nav-mobile-icon {
     display: none;
 }
-.nav div {
-    float: left;
-    /* padding-bottom: 30px; */
 
+.nav-desktop a{
+    padding: 25px;
+    opacity: 0.5;
 }
 
 .nav a {
@@ -93,7 +93,8 @@ a {
 	background-image: url("img/background.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+    background-size: cover;
+    z-index: -1;
 }
 
 .header {
@@ -123,10 +124,14 @@ a {
     display: block;
     border-radius: 50%;
     border: 15px solid white;
+    float: right;
+    margin-top: -140px;
 }
 
+/* Project section styling */
+
 .featured, .project {
-    background-color: #eff8ff;
+    background-color: #fafafa;
     padding: 20px;
 }
 
@@ -136,15 +141,13 @@ a {
 }
 
 .featured button, .project button {
-    background-color: #a5d8f0;
+    background-color: #a0a0a070;
     color: white;
     border: none;
     display: block;
     margin: 0 auto;
     width: 35%;
     min-height: 50px;
-    text-transform: uppercase;
-
 }
 
 .featured-video {
@@ -185,6 +188,8 @@ a {
     margin: 10px;
 }
 
+/* Contact section styling */
+
 .contact h2{
     text-align: center;
     font-family: 'Open Sans',arial,sans-serif;
@@ -192,7 +197,7 @@ a {
 }
 
 .contact {
-    background-color: #eff8ff;
+    background-color: #fafafa;
 }
 
 .contact-buttons {
@@ -205,7 +210,7 @@ a {
 
 .contact-buttons a {
     font-size: 50px;
-    color: #9bd9f2;
+    color: #42b5ff;
     display: inline-block;
     padding: 5px;
 }
@@ -222,6 +227,7 @@ a {
     }
     #about {
         margin: 0 auto;
+        float: none;
     }
     .about {
         align-items: center;
