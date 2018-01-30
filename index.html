@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/dropdown.css">
     <link rel="stylesheet" href="main.css">
     <title>Tyler Campbell Portfolio</title>
 </head>
@@ -21,8 +20,15 @@
 				<a href="#about" class="about_button">About Me</a>
 			</div>
 		<div class="nav-mobile-icon">
-			<i class="fa fa-bars" aria-hidden="true" style="color: rgba(0,162,255,0.8); font-size: 36px;"></i>
-		</div>
+        <a href="#" data-mobile-nav><i class="fa fa-bars" aria-hidden="true" style="color: rgba(0,162,255,0.8); font-size: 36px;"></i></a>
+        <div class="dropdown-menu" style="display: none">
+                <ul>
+                    <li>About me</li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="header">
         </div>
@@ -39,37 +45,30 @@
                   </span>
                   <h2>Featured Project: DigitalTasks</h2>
         <p>DigitalTasks is a task management chrome extension that aggregates both personal and business tasks (via our Salesforce integration). The app allows users to create, update, and delete tasks and contacts from any http / https website. Using the app's filter feature, users can quickly view overdue, completed, and upcoming tasks sorted by date. Additionally, DigitalTasks directly integrates with Salesforce, allowing users to easily view, update, and delete tasks with logging into their Salesforce instance. DigitalTasks is currently published on chrome's marketplace, and can be installed by following the link below.</p>
-        <div role="button" class="chrome-button">
-            <div style="padding-right: 8px;">
-                <i class="fa fa-plus" aria-hidden="true"></i> 
-            </div>
+        <div role="button" class="chrome-button" data-chrome-button>
+                <a href="https://chrome.google.com/webstore/detail/digitaltasks/lfomlcgblncmggicibhlbbinfajnieki" target="_blank"> 
                <div>
-                    Add to Chrome
+                    <i class="fa fa-plus" aria-hidden="true"></i>  Add to Chrome
                </div> 
-        </div>
+        </div></a>
         <p>Watch the following video for a walkthrough of the app to see all the features in action!</p>
         <div class="featured-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5DAdvmZHA74?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-        <button>Git Hub</button>
+        <button><a href="https://github.com/tcampb/DigitalTasks" target="_blank">Git Hub</a></button>
     </div>
     <div class="projects">
         <h2>Projects</h2>
-        <div class="ui selection dropdown" style="width: 100%">
-                <input type="hidden" name="gender">
-                <i class="dropdown icon" data-project-dropdown></i>
-                <div class="default text">Select a project</div>
-                <div class="menu" data-menu>
-                  <div class="item" data-value="2" style="text-align: center" data-item>Catlendly</div>
-                  <div class="item" data-value="1" style="text-align: center" data-item>Zendesk-Dashboard</div>
-                  <div class="item" data-value="0" style="text-align: center" data-item>DigitalTasks</div>
+              <div class="project">
+                    <h2>Catlendly</h2>
+                    <p>Catlendly is a 2d "space evader" game where the player gains points by flying through an asteroid belt for as long as possible.</p>
+                    <button><a href="https://github.com/tcampb/Catlendly" target="_blank">Git Hub</a></button>
                 </div>
-              </div>
-              <div class="project hide" data-project>
-                    <h2 data-project-title></h2>
-                    <p data-project-description></p>
-                    <button>Git Hub</button>
-                </div>
+                <div class="project">
+                        <h2>Zendesk-Dashboard</h2>
+                        <p>The Calendly Zendesk Dashboard provides a realtime visual display of each support rep's progress on ticket requests and completions.</p>
+                        <button><a href="https://github.com/tcampb/Zendesk-Dashboard" target="_blank">Git Hub</a></button>
+                    </div>
     </div>
     <div class="contact">
             <h2>Contact</h2>
@@ -82,6 +81,5 @@
     </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
 <script src="main.js"></script>
 </html>
