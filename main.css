@@ -45,23 +45,9 @@ html, body {
     justify-content: center;
 }
 
-.dropdown-menu ul {
-    list-style-type: none;
-    font-family: 'Fira Sans', sans-serif;
-    padding: 0px;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px 0;
-    opacity: 0.4;
+.nav-mobile-icon {
+    display: none;
 }
-
-.dropdown-menu li {
-    padding: 5px 0;
-}
-
-
-
 .nav div {
     float: left;
     /* padding-bottom: 30px; */
@@ -78,8 +64,24 @@ a {
     color: white;
 }
 
-.nav-mobile-icon {
-    padding-right: 20px;
+.dropdown-menu ul {
+    list-style-type: none;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    opacity: 0.4;
+}
+
+
+.dropdown-menu li {
+    padding: 5px 0;
+}
+
+.dropdown-menu li a{
+    font-size: 20px;
 }
 
 .logo {
@@ -210,6 +212,11 @@ a {
 
 
 @media screen and (max-width: 540px) {
+    .nav-mobile-icon {
+        padding-right: 20px;
+        display: block;
+    }
+
     .nav-desktop {
         display: none;
     }
