@@ -17,3 +17,4 @@ $('a[href*="#"]')
           scrollTop: $(targetHash).offset().top
         }, 1500);
   });
+

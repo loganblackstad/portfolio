@@ -107,9 +107,9 @@ a {
     padding: 20px;
 }
 
-.about h2, .featured h2, .projects h2, .project h2 {
-    text-align: center;
+h2 {
     font-family: 'Fira Sans', sans-serif;
+    text-align: center;
 }
 
 .about p, .featured p, .project p {
@@ -118,6 +118,10 @@ a {
     letter-spacing: 0.03em;
     line-height: 1.7em;
     text-align: center;
+}
+
+.about h2, .about p {
+    text-align: unset;
 }
 
 #about {
@@ -184,8 +188,25 @@ a {
 }
 
 .project {
+    display: flex;
     border: 4px solid #f1f2f3;
     margin: 10px;
+}
+
+.code-logo {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 35px;
+    margin-top: -30px;
+    color: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+
+
+.project-mobile {
+    display: none;
 }
 
 /* Contact section styling */
@@ -225,6 +246,12 @@ a {
     .nav-desktop {
         display: none;
     }
+    .project-mobile {
+        display: block;
+    }
+    .project-desktop {
+        display: none;
+    }
     #about {
         margin: 0 auto;
         float: none;
@@ -233,7 +260,9 @@ a {
         align-items: center;
         position: relative;
         bottom: 135px;
-        /* justify-content: center; */
+    }
+    .about h2, .about p {
+        text-align: center;
     }
     .featured, .projects, .contact {
         position: relative;
@@ -249,10 +278,16 @@ a {
     }
 
     .contact-buttons {
+        display: flex;
+        justify-content: space-around;
         text-align: center;
         padding: 15px 20px;
         width: 320px;
         height: 160px;
+    }
+
+    .contact-buttons a {
+        display: inline-block;
     }
 
 }
