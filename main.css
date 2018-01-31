@@ -124,6 +124,10 @@ h2 {
     text-align: unset;
 }
 
+.about h2 {
+    padding-left: 17px;
+}
+
 #about {
     display: block;
     border-radius: 50%;
